@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="to_homepage.js"></script>
+    
+  <link rel="stylesheet" href='style.css'>
+    <title>Hospital Management System</title>
+</head>
+<body>
+<div class="header"> 
+    <div class="container">
+        <div class="logo">
+        <h1> Hospital Management System</h1>
+    </div>
+    </div>
+ </div>
+<br><br><br><br><br>
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+  	<img src="logo.jpg" width=200px height=200px>
+  </div>
+  <div class="col-md-6">
+  	<div class="login">
+  			<h4>Login</h4>
+  		</div>
+  	<form class="form-horizontal" action="" method="">
+      
+  			
+<select class="form-control" id="user_type" name="user_type" >
+<option value="doctor">Doctor</option>
+<option value="patient">Patient</option>
+<option value="admin">Admin</option>
+<option value="receptionist">Receptionist</option>
+<option value="pharmacist">Pharmacist</option>
+</select>
+
+			<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+				   
+			<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+			<input type="button" value="Submit" onclick="goTohomepage()" />   
+		     			
+</form>
+<p id="error">
+</p>
+  </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
